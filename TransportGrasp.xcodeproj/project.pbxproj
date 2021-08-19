@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B29B817626CE7FC5008FE020 /* TransportGraspApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29B817526CE7FC5008FE020 /* TransportGraspApp.swift */; };
+		B29B817826CE7FC5008FE020 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29B817726CE7FC5008FE020 /* ContentView.swift */; };
+		B29B817A26CE7FC6008FE020 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B29B817926CE7FC6008FE020 /* Assets.xcassets */; };
+		B29B817D26CE7FC6008FE020 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B29B817C26CE7FC6008FE020 /* Preview Assets.xcassets */; };
+		B29B818726CE7FC6008FE020 /* TransportGraspTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29B818626CE7FC6008FE020 /* TransportGraspTests.swift */; };
+		B29B819126CE7FC6008FE020 /* TransportGraspUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29B819026CE7FC6008FE020 /* TransportGraspUITests.swift */; };
+		B29B819326CE7FC6008FE020 /* TransportGraspUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29B819226CE7FC6008FE020 /* TransportGraspUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B29B818326CE7FC6008FE020 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B29B816A26CE7FC5008FE020 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B29B817126CE7FC5008FE020;
+			remoteInfo = TransportGrasp;
+		};
+		B29B818D26CE7FC6008FE020 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B29B816A26CE7FC5008FE020 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B29B817126CE7FC5008FE020;
+			remoteInfo = TransportGrasp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B29B817226CE7FC5008FE020 /* TransportGrasp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TransportGrasp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B29B817526CE7FC5008FE020 /* TransportGraspApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportGraspApp.swift; sourceTree = "<group>"; };
+		B29B817726CE7FC5008FE020 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B29B817926CE7FC6008FE020 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B29B817C26CE7FC6008FE020 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B29B818226CE7FC6008FE020 /* TransportGraspTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransportGraspTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B29B818626CE7FC6008FE020 /* TransportGraspTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportGraspTests.swift; sourceTree = "<group>"; };
+		B29B818C26CE7FC6008FE020 /* TransportGraspUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransportGraspUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B29B819026CE7FC6008FE020 /* TransportGraspUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportGraspUITests.swift; sourceTree = "<group>"; };
+		B29B819226CE7FC6008FE020 /* TransportGraspUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportGraspUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B29B816F26CE7FC5008FE020 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B29B817F26CE7FC6008FE020 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B29B818926CE7FC6008FE020 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B29B816926CE7FC5008FE020 = {
+			isa = PBXGroup;
+			children = (
+				B29B817426CE7FC5008FE020 /* TransportGrasp */,
+				B29B818526CE7FC6008FE020 /* TransportGraspTests */,
+				B29B818F26CE7FC6008FE020 /* TransportGraspUITests */,
+				B29B817326CE7FC5008FE020 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B29B817326CE7FC5008FE020 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B29B817226CE7FC5008FE020 /* TransportGrasp.app */,
+				B29B818226CE7FC6008FE020 /* TransportGraspTests.xctest */,
+				B29B818C26CE7FC6008FE020 /* TransportGraspUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B29B817426CE7FC5008FE020 /* TransportGrasp */ = {
+			isa = PBXGroup;
+			children = (
+				B29B817526CE7FC5008FE020 /* TransportGraspApp.swift */,
+				B29B817726CE7FC5008FE020 /* ContentView.swift */,
+				B29B817926CE7FC6008FE020 /* Assets.xcassets */,
+				B29B817B26CE7FC6008FE020 /* Preview Content */,
+			);
+			path = TransportGrasp;
+			sourceTree = "<group>";
+		};
+		B29B817B26CE7FC6008FE020 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B29B817C26CE7FC6008FE020 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B29B818526CE7FC6008FE020 /* TransportGraspTests */ = {
+			isa = PBXGroup;
+			children = (
+				B29B818626CE7FC6008FE020 /* TransportGraspTests.swift */,
+			);
+			path = TransportGraspTests;
+			sourceTree = "<group>";
+		};
+		B29B818F26CE7FC6008FE020 /* TransportGraspUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B29B819026CE7FC6008FE020 /* TransportGraspUITests.swift */,
+				B29B819226CE7FC6008FE020 /* TransportGraspUITestsLaunchTests.swift */,
+			);
+			path = TransportGraspUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B29B817126CE7FC5008FE020 /* TransportGrasp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B29B819626CE7FC6008FE020 /* Build configuration list for PBXNativeTarget "TransportGrasp" */;
+			buildPhases = (
+				B29B816E26CE7FC5008FE020 /* Sources */,
+				B29B816F26CE7FC5008FE020 /* Frameworks */,
+				B29B817026CE7FC5008FE020 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TransportGrasp;
+			productName = TransportGrasp;
+			productReference = B29B817226CE7FC5008FE020 /* TransportGrasp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B29B818126CE7FC6008FE020 /* TransportGraspTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B29B819926CE7FC6008FE020 /* Build configuration list for PBXNativeTarget "TransportGraspTests" */;
+			buildPhases = (
+				B29B817E26CE7FC6008FE020 /* Sources */,
+				B29B817F26CE7FC6008FE020 /* Frameworks */,
+				B29B818026CE7FC6008FE020 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B29B818426CE7FC6008FE020 /* PBXTargetDependency */,
+			);
+			name = TransportGraspTests;
+			productName = TransportGraspTests;
+			productReference = B29B818226CE7FC6008FE020 /* TransportGraspTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B29B818B26CE7FC6008FE020 /* TransportGraspUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B29B819C26CE7FC6008FE020 /* Build configuration list for PBXNativeTarget "TransportGraspUITests" */;
+			buildPhases = (
+				B29B818826CE7FC6008FE020 /* Sources */,
+				B29B818926CE7FC6008FE020 /* Frameworks */,
+				B29B818A26CE7FC6008FE020 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B29B818E26CE7FC6008FE020 /* PBXTargetDependency */,
+			);
+			name = TransportGraspUITests;
+			productName = TransportGraspUITests;
+			productReference = B29B818C26CE7FC6008FE020 /* TransportGraspUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B29B816A26CE7FC5008FE020 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					B29B817126CE7FC5008FE020 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					B29B818126CE7FC6008FE020 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = B29B817126CE7FC5008FE020;
+					};
+					B29B818B26CE7FC6008FE020 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = B29B817126CE7FC5008FE020;
+					};
+				};
+			};
+			buildConfigurationList = B29B816D26CE7FC5008FE020 /* Build configuration list for PBXProject "TransportGrasp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B29B816926CE7FC5008FE020;
+			productRefGroup = B29B817326CE7FC5008FE020 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B29B817126CE7FC5008FE020 /* TransportGrasp */,
+				B29B818126CE7FC6008FE020 /* TransportGraspTests */,
+				B29B818B26CE7FC6008FE020 /* TransportGraspUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B29B817026CE7FC5008FE020 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B29B817D26CE7FC6008FE020 /* Preview Assets.xcassets in Resources */,
+				B29B817A26CE7FC6008FE020 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B29B818026CE7FC6008FE020 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B29B818A26CE7FC6008FE020 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B29B816E26CE7FC5008FE020 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B29B817826CE7FC5008FE020 /* ContentView.swift in Sources */,
+				B29B817626CE7FC5008FE020 /* TransportGraspApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B29B817E26CE7FC6008FE020 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B29B818726CE7FC6008FE020 /* TransportGraspTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B29B818826CE7FC6008FE020 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B29B819326CE7FC6008FE020 /* TransportGraspUITestsLaunchTests.swift in Sources */,
+				B29B819126CE7FC6008FE020 /* TransportGraspUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B29B818426CE7FC6008FE020 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B29B817126CE7FC5008FE020 /* TransportGrasp */;
+			targetProxy = B29B818326CE7FC6008FE020 /* PBXContainerItemProxy */;
+		};
+		B29B818E26CE7FC6008FE020 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B29B817126CE7FC5008FE020 /* TransportGrasp */;
+			targetProxy = B29B818D26CE7FC6008FE020 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B29B819426CE7FC6008FE020 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B29B819526CE7FC6008FE020 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B29B819726CE7FC6008FE020 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TransportGrasp/Preview Content\"";
+				DEVELOPMENT_TEAM = 4T6W96A423;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.johnnyip.TransportGrasp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B29B819826CE7FC6008FE020 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TransportGrasp/Preview Content\"";
+				DEVELOPMENT_TEAM = 4T6W96A423;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.johnnyip.TransportGrasp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B29B819A26CE7FC6008FE020 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4T6W96A423;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.johnnyip.TransportGraspTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TransportGrasp.app/TransportGrasp";
+			};
+			name = Debug;
+		};
+		B29B819B26CE7FC6008FE020 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4T6W96A423;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.johnnyip.TransportGraspTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TransportGrasp.app/TransportGrasp";
+			};
+			name = Release;
+		};
+		B29B819D26CE7FC6008FE020 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4T6W96A423;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.johnnyip.TransportGraspUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TransportGrasp;
+			};
+			name = Debug;
+		};
+		B29B819E26CE7FC6008FE020 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4T6W96A423;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.johnnyip.TransportGraspUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TransportGrasp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B29B816D26CE7FC5008FE020 /* Build configuration list for PBXProject "TransportGrasp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B29B819426CE7FC6008FE020 /* Debug */,
+				B29B819526CE7FC6008FE020 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B29B819626CE7FC6008FE020 /* Build configuration list for PBXNativeTarget "TransportGrasp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B29B819726CE7FC6008FE020 /* Debug */,
+				B29B819826CE7FC6008FE020 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B29B819926CE7FC6008FE020 /* Build configuration list for PBXNativeTarget "TransportGraspTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B29B819A26CE7FC6008FE020 /* Debug */,
+				B29B819B26CE7FC6008FE020 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B29B819C26CE7FC6008FE020 /* Build configuration list for PBXNativeTarget "TransportGraspUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B29B819D26CE7FC6008FE020 /* Debug */,
+				B29B819E26CE7FC6008FE020 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B29B816A26CE7FC5008FE020 /* Project object */;
+}
