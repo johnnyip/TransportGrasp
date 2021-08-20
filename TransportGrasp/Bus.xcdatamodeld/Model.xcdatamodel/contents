@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19197" systemVersion="21A5304g" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="KMB_routes" representedClassName="KMB_routes" syncable="YES" codeGenerationType="class">
+        <attribute name="bound" optional="YES" attributeType="String"/>
+        <attribute name="dest_en" optional="YES" attributeType="String"/>
+        <attribute name="dest_tc" optional="YES" attributeType="String"/>
+        <attribute name="orig_en" optional="YES" attributeType="String"/>
+        <attribute name="orig_tc" optional="YES" attributeType="String"/>
+        <attribute name="route" optional="YES" attributeType="String"/>
+        <attribute name="serviceType" optional="YES" attributeType="String"/>
+        <relationship name="toStation" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="KMB_stations" inverseName="toStation" inverseEntity="KMB_stations"/>
+    </entity>
+    <entity name="KMB_stations" representedClassName="KMB_stations" syncable="YES" codeGenerationType="class">
+        <attribute name="bound" optional="YES" attributeType="String"/>
+        <attribute name="route" optional="YES" attributeType="String"/>
+        <attribute name="seq" optional="YES" attributeType="String"/>
+        <attribute name="serviceType" optional="YES" attributeType="String"/>
+        <attribute name="stop" optional="YES" attributeType="String"/>
+        <relationship name="toStation" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="KMB_routes" inverseName="toStation" inverseEntity="KMB_routes"/>
+    </entity>
+    <elements>
+        <element name="KMB_routes" positionX="-63" positionY="-18" width="128" height="149"/>
+        <element name="KMB_stations" positionX="-45" positionY="63" width="128" height="119"/>
+    </elements>
+</model>

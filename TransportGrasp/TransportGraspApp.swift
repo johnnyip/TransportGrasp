@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct TransportGraspApp: App {
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            Home()
         }
     }
 }

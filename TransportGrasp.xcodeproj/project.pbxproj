@@ -3,47 +3,97 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B24B06CF26CF829E00379F2C /* FavouriteRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24B06CE26CF829E00379F2C /* FavouriteRoutes.swift */; };
+		B24B06D126CF8A7400379F2C /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = B24B06D026CF8A7400379F2C /* SwiftyJSON */; };
+		B24B06D526CF963A00379F2C /* SummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24B06D426CF963A00379F2C /* SummaryView.swift */; };
+		B24B06D726CFA27600379F2C /* RoutesHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24B06D626CFA27600379F2C /* RoutesHandler.swift */; };
+		B24B06DD26CFCCE100379F2C /* AlertView in Resources */ = {isa = PBXBuildFile; fileRef = B24B06D826CFCCE100379F2C /* AlertView */; };
+		B24B06DE26CFCCE100379F2C /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24B06D926CFCCE100379F2C /* LoadingView.swift */; };
+		B24B06E026CFCCE100379F2C /* PopupAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24B06DB26CFCCE100379F2C /* PopupAlertView.swift */; };
+		B24B06E126CFCCE100379F2C /* TwoOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24B06DC26CFCCE100379F2C /* TwoOptionsView.swift */; };
+		B282A63926CF3B3E004870D0 /* Bus_KMB.swift in Sources */ = {isa = PBXBuildFile; fileRef = B282A63826CF3B3E004870D0 /* Bus_KMB.swift */; };
+		B282A63D26CF44BF004870D0 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = B282A63C26CF44BF004870D0 /* SwiftyJSON */; };
+		B282A64226CF474B004870D0 /* Bus_KMBView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B282A64126CF474B004870D0 /* Bus_KMBView.swift */; };
+		B282A64526CF4921004870D0 /* Introspect in Frameworks */ = {isa = PBXBuildFile; productRef = B282A64426CF4921004870D0 /* Introspect */; };
+		B282A65126CF658F004870D0 /* Bus_KMBDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B282A65026CF658F004870D0 /* Bus_KMBDetail.swift */; };
+		B282A65326CF6828004870D0 /* keyboardFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B282A65226CF6828004870D0 /* keyboardFunctions.swift */; };
+		B282A65526CF6845004870D0 /* ButtonStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = B282A65426CF6845004870D0 /* ButtonStyles.swift */; };
+		B282A65926CF6851004870D0 /* SheetPreventDismiss.swift in Sources */ = {isa = PBXBuildFile; fileRef = B282A65626CF6851004870D0 /* SheetPreventDismiss.swift */; };
+		B282A65A26CF6851004870D0 /* SharedOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B282A65726CF6851004870D0 /* SharedOptions.swift */; };
+		B282A65B26CF6851004870D0 /* StringFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B282A65826CF6851004870D0 /* StringFunctions.swift */; };
 		B29B817626CE7FC5008FE020 /* TransportGraspApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29B817526CE7FC5008FE020 /* TransportGraspApp.swift */; };
-		B29B817826CE7FC5008FE020 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29B817726CE7FC5008FE020 /* ContentView.swift */; };
+		B29B817826CE7FC5008FE020 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29B817726CE7FC5008FE020 /* Home.swift */; };
 		B29B817A26CE7FC6008FE020 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B29B817926CE7FC6008FE020 /* Assets.xcassets */; };
 		B29B817D26CE7FC6008FE020 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B29B817C26CE7FC6008FE020 /* Preview Assets.xcassets */; };
-		B29B818726CE7FC6008FE020 /* TransportGraspTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29B818626CE7FC6008FE020 /* TransportGraspTests.swift */; };
-		B29B819126CE7FC6008FE020 /* TransportGraspUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29B819026CE7FC6008FE020 /* TransportGraspUITests.swift */; };
-		B29B819326CE7FC6008FE020 /* TransportGraspUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29B819226CE7FC6008FE020 /* TransportGraspUITestsLaunchTests.swift */; };
+		B29B81F126CEC2E8008FE020 /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B29B81D726CEB7DE008FE020 /* Intents.framework */; };
+		B29B81F826CEC2E8008FE020 /* demoIntent.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B29B81F026CEC2E8008FE020 /* demoIntent.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B29B820026CEC32A008FE020 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29B81FC26CEC32A008FE020 /* IntentHandler.swift */; };
+		B29B820226CEC32A008FE020 /* ETAIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29B81FE26CEC32A008FE020 /* ETAIntentHandler.swift */; };
+		B29B820326CEC32A008FE020 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = B29B81FF26CEC32A008FE020 /* Intents.intentdefinition */; };
+		B29B820426CEC334008FE020 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = B29B81FF26CEC32A008FE020 /* Intents.intentdefinition */; };
+		B2C8C11026CFFFB5008DBCDB /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = B2C8C10F26CFFFB5008DBCDB /* Alamofire */; };
+		B2C8C11426D00184008DBCDB /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = B2C8C11326D00184008DBCDB /* Alamofire */; };
+		B2C8C11726D003A2008DBCDB /* PopupView in Frameworks */ = {isa = PBXBuildFile; productRef = B2C8C11626D003A2008DBCDB /* PopupView */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		B29B818326CE7FC6008FE020 /* PBXContainerItemProxy */ = {
+		B29B81F626CEC2E8008FE020 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B29B816A26CE7FC5008FE020 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B29B817126CE7FC5008FE020;
-			remoteInfo = TransportGrasp;
-		};
-		B29B818D26CE7FC6008FE020 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B29B816A26CE7FC5008FE020 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B29B817126CE7FC5008FE020;
-			remoteInfo = TransportGrasp;
+			remoteGlobalIDString = B29B81EF26CEC2E8008FE020;
+			remoteInfo = demoIntent;
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		B29B81B226CE8378008FE020 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B29B81F826CEC2E8008FE020 /* demoIntent.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		B24B06CD26CF825500379F2C /* demoIntent.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = demoIntent.entitlements; sourceTree = "<group>"; };
+		B24B06CE26CF829E00379F2C /* FavouriteRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteRoutes.swift; sourceTree = "<group>"; };
+		B24B06D426CF963A00379F2C /* SummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryView.swift; sourceTree = "<group>"; };
+		B24B06D626CFA27600379F2C /* RoutesHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutesHandler.swift; sourceTree = "<group>"; };
+		B24B06D826CFCCE100379F2C /* AlertView */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AlertView; sourceTree = "<group>"; };
+		B24B06D926CFCCE100379F2C /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		B24B06DB26CFCCE100379F2C /* PopupAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupAlertView.swift; sourceTree = "<group>"; };
+		B24B06DC26CFCCE100379F2C /* TwoOptionsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwoOptionsView.swift; sourceTree = "<group>"; };
+		B282A63826CF3B3E004870D0 /* Bus_KMB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bus_KMB.swift; sourceTree = "<group>"; };
+		B282A64126CF474B004870D0 /* Bus_KMBView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bus_KMBView.swift; sourceTree = "<group>"; };
+		B282A65026CF658F004870D0 /* Bus_KMBDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bus_KMBDetail.swift; sourceTree = "<group>"; };
+		B282A65226CF6828004870D0 /* keyboardFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = keyboardFunctions.swift; sourceTree = "<group>"; };
+		B282A65426CF6845004870D0 /* ButtonStyles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonStyles.swift; sourceTree = "<group>"; };
+		B282A65626CF6851004870D0 /* SheetPreventDismiss.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SheetPreventDismiss.swift; sourceTree = "<group>"; };
+		B282A65726CF6851004870D0 /* SharedOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedOptions.swift; sourceTree = "<group>"; };
+		B282A65826CF6851004870D0 /* StringFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringFunctions.swift; sourceTree = "<group>"; };
 		B29B817226CE7FC5008FE020 /* TransportGrasp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TransportGrasp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B29B817526CE7FC5008FE020 /* TransportGraspApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportGraspApp.swift; sourceTree = "<group>"; };
-		B29B817726CE7FC5008FE020 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B29B817726CE7FC5008FE020 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		B29B817926CE7FC6008FE020 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B29B817C26CE7FC6008FE020 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		B29B818226CE7FC6008FE020 /* TransportGraspTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransportGraspTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B29B818626CE7FC6008FE020 /* TransportGraspTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportGraspTests.swift; sourceTree = "<group>"; };
-		B29B818C26CE7FC6008FE020 /* TransportGraspUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransportGraspUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B29B819026CE7FC6008FE020 /* TransportGraspUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportGraspUITests.swift; sourceTree = "<group>"; };
-		B29B819226CE7FC6008FE020 /* TransportGraspUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportGraspUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B29B819F26CE819E008FE020 /* TransportGrasp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TransportGrasp.entitlements; sourceTree = "<group>"; };
+		B29B81B926CEA87F008FE020 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		B29B81D726CEB7DE008FE020 /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
+		B29B81F026CEC2E8008FE020 /* demoIntent.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = demoIntent.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		B29B81F526CEC2E8008FE020 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B29B81FC26CEC32A008FE020 /* IntentHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		B29B81FE26CEC32A008FE020 /* ETAIntentHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ETAIntentHandler.swift; sourceTree = "<group>"; };
+		B29B81FF26CEC32A008FE020 /* Intents.intentdefinition */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,32 +101,77 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2C8C11726D003A2008DBCDB /* PopupView in Frameworks */,
+				B2C8C11026CFFFB5008DBCDB /* Alamofire in Frameworks */,
+				B282A63D26CF44BF004870D0 /* SwiftyJSON in Frameworks */,
+				B282A64526CF4921004870D0 /* Introspect in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B29B817F26CE7FC6008FE020 /* Frameworks */ = {
+		B29B81ED26CEC2E8008FE020 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B29B818926CE7FC6008FE020 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				B2C8C11426D00184008DBCDB /* Alamofire in Frameworks */,
+				B24B06D126CF8A7400379F2C /* SwiftyJSON in Frameworks */,
+				B29B81F126CEC2E8008FE020 /* Intents.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B282A63426CF3B08004870D0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B282A63826CF3B3E004870D0 /* Bus_KMB.swift */,
+				B24B06CE26CF829E00379F2C /* FavouriteRoutes.swift */,
+				B24B06D626CFA27600379F2C /* RoutesHandler.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B282A63626CF3B13004870D0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B24B06D426CF963A00379F2C /* SummaryView.swift */,
+				B282A63E26CF4715004870D0 /* Bus */,
+				B29B817726CE7FC5008FE020 /* Home.swift */,
+				B24B06D826CFCCE100379F2C /* AlertView */,
+				B24B06D926CFCCE100379F2C /* LoadingView.swift */,
+				B24B06DB26CFCCE100379F2C /* PopupAlertView.swift */,
+				B24B06DC26CFCCE100379F2C /* TwoOptionsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B282A63726CF3B17004870D0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B282A65226CF6828004870D0 /* keyboardFunctions.swift */,
+				B282A65426CF6845004870D0 /* ButtonStyles.swift */,
+				B282A65726CF6851004870D0 /* SharedOptions.swift */,
+				B282A65626CF6851004870D0 /* SheetPreventDismiss.swift */,
+				B282A65826CF6851004870D0 /* StringFunctions.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B282A63E26CF4715004870D0 /* Bus */ = {
+			isa = PBXGroup;
+			children = (
+				B282A64126CF474B004870D0 /* Bus_KMBView.swift */,
+				B282A65026CF658F004870D0 /* Bus_KMBDetail.swift */,
+			);
+			path = Bus;
+			sourceTree = "<group>";
+		};
 		B29B816926CE7FC5008FE020 = {
 			isa = PBXGroup;
 			children = (
 				B29B817426CE7FC5008FE020 /* TransportGrasp */,
-				B29B818526CE7FC6008FE020 /* TransportGraspTests */,
-				B29B818F26CE7FC6008FE020 /* TransportGraspUITests */,
+				B29B81F226CEC2E8008FE020 /* demoIntent */,
+				B29B81D626CEB7DE008FE020 /* Frameworks */,
 				B29B817326CE7FC5008FE020 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -85,8 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				B29B817226CE7FC5008FE020 /* TransportGrasp.app */,
-				B29B818226CE7FC6008FE020 /* TransportGraspTests.xctest */,
-				B29B818C26CE7FC6008FE020 /* TransportGraspUITests.xctest */,
+				B29B81F026CEC2E8008FE020 /* demoIntent.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,8 +188,12 @@
 		B29B817426CE7FC5008FE020 /* TransportGrasp */ = {
 			isa = PBXGroup;
 			children = (
+				B29B81B926CEA87F008FE020 /* Info.plist */,
+				B29B819F26CE819E008FE020 /* TransportGrasp.entitlements */,
 				B29B817526CE7FC5008FE020 /* TransportGraspApp.swift */,
-				B29B817726CE7FC5008FE020 /* ContentView.swift */,
+				B282A63726CF3B17004870D0 /* Controller */,
+				B282A63626CF3B13004870D0 /* View */,
+				B282A63426CF3B08004870D0 /* Model */,
 				B29B817926CE7FC6008FE020 /* Assets.xcassets */,
 				B29B817B26CE7FC6008FE020 /* Preview Content */,
 			);
@@ -110,21 +208,24 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		B29B818526CE7FC6008FE020 /* TransportGraspTests */ = {
+		B29B81D626CEB7DE008FE020 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B29B818626CE7FC6008FE020 /* TransportGraspTests.swift */,
+				B29B81D726CEB7DE008FE020 /* Intents.framework */,
 			);
-			path = TransportGraspTests;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		B29B818F26CE7FC6008FE020 /* TransportGraspUITests */ = {
+		B29B81F226CEC2E8008FE020 /* demoIntent */ = {
 			isa = PBXGroup;
 			children = (
-				B29B819026CE7FC6008FE020 /* TransportGraspUITests.swift */,
-				B29B819226CE7FC6008FE020 /* TransportGraspUITestsLaunchTests.swift */,
+				B24B06CD26CF825500379F2C /* demoIntent.entitlements */,
+				B29B81FE26CEC32A008FE020 /* ETAIntentHandler.swift */,
+				B29B81FC26CEC32A008FE020 /* IntentHandler.swift */,
+				B29B81FF26CEC32A008FE020 /* Intents.intentdefinition */,
+				B29B81F526CEC2E8008FE020 /* Info.plist */,
 			);
-			path = TransportGraspUITests;
+			path = demoIntent;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,51 +238,44 @@
 				B29B816E26CE7FC5008FE020 /* Sources */,
 				B29B816F26CE7FC5008FE020 /* Frameworks */,
 				B29B817026CE7FC5008FE020 /* Resources */,
+				B29B81B226CE8378008FE020 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				B29B81F726CEC2E8008FE020 /* PBXTargetDependency */,
 			);
 			name = TransportGrasp;
+			packageProductDependencies = (
+				B282A63C26CF44BF004870D0 /* SwiftyJSON */,
+				B282A64426CF4921004870D0 /* Introspect */,
+				B2C8C10F26CFFFB5008DBCDB /* Alamofire */,
+				B2C8C11626D003A2008DBCDB /* PopupView */,
+			);
 			productName = TransportGrasp;
 			productReference = B29B817226CE7FC5008FE020 /* TransportGrasp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B29B818126CE7FC6008FE020 /* TransportGraspTests */ = {
+		B29B81EF26CEC2E8008FE020 /* demoIntent */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B29B819926CE7FC6008FE020 /* Build configuration list for PBXNativeTarget "TransportGraspTests" */;
+			buildConfigurationList = B29B81F926CEC2E8008FE020 /* Build configuration list for PBXNativeTarget "demoIntent" */;
 			buildPhases = (
-				B29B817E26CE7FC6008FE020 /* Sources */,
-				B29B817F26CE7FC6008FE020 /* Frameworks */,
-				B29B818026CE7FC6008FE020 /* Resources */,
+				B29B81EC26CEC2E8008FE020 /* Sources */,
+				B29B81ED26CEC2E8008FE020 /* Frameworks */,
+				B29B81EE26CEC2E8008FE020 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B29B818426CE7FC6008FE020 /* PBXTargetDependency */,
 			);
-			name = TransportGraspTests;
-			productName = TransportGraspTests;
-			productReference = B29B818226CE7FC6008FE020 /* TransportGraspTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		B29B818B26CE7FC6008FE020 /* TransportGraspUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B29B819C26CE7FC6008FE020 /* Build configuration list for PBXNativeTarget "TransportGraspUITests" */;
-			buildPhases = (
-				B29B818826CE7FC6008FE020 /* Sources */,
-				B29B818926CE7FC6008FE020 /* Frameworks */,
-				B29B818A26CE7FC6008FE020 /* Resources */,
+			name = demoIntent;
+			packageProductDependencies = (
+				B24B06D026CF8A7400379F2C /* SwiftyJSON */,
+				B2C8C11326D00184008DBCDB /* Alamofire */,
 			);
-			buildRules = (
-			);
-			dependencies = (
-				B29B818E26CE7FC6008FE020 /* PBXTargetDependency */,
-			);
-			name = TransportGraspUITests;
-			productName = TransportGraspUITests;
-			productReference = B29B818C26CE7FC6008FE020 /* TransportGraspUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
+			productName = demoIntent;
+			productReference = B29B81F026CEC2E8008FE020 /* demoIntent.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -196,18 +290,13 @@
 					B29B817126CE7FC5008FE020 = {
 						CreatedOnToolsVersion = 13.0;
 					};
-					B29B818126CE7FC6008FE020 = {
+					B29B81EF26CEC2E8008FE020 = {
 						CreatedOnToolsVersion = 13.0;
-						TestTargetID = B29B817126CE7FC5008FE020;
-					};
-					B29B818B26CE7FC6008FE020 = {
-						CreatedOnToolsVersion = 13.0;
-						TestTargetID = B29B817126CE7FC5008FE020;
 					};
 				};
 			};
 			buildConfigurationList = B29B816D26CE7FC5008FE020 /* Build configuration list for PBXProject "TransportGrasp" */;
-			compatibilityVersion = "Xcode 13.0";
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -215,13 +304,18 @@
 				Base,
 			);
 			mainGroup = B29B816926CE7FC5008FE020;
+			packageReferences = (
+				B282A63B26CF44BF004870D0 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				B282A64326CF4921004870D0 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */,
+				B2C8C10E26CFFFB5008DBCDB /* XCRemoteSwiftPackageReference "Alamofire" */,
+				B2C8C11526D003A2008DBCDB /* XCRemoteSwiftPackageReference "PopupView" */,
+			);
 			productRefGroup = B29B817326CE7FC5008FE020 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				B29B817126CE7FC5008FE020 /* TransportGrasp */,
-				B29B818126CE7FC6008FE020 /* TransportGraspTests */,
-				B29B818B26CE7FC6008FE020 /* TransportGraspUITests */,
+				B29B81EF26CEC2E8008FE020 /* demoIntent */,
 			);
 		};
 /* End PBXProject section */
@@ -231,19 +325,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B24B06DD26CFCCE100379F2C /* AlertView in Resources */,
 				B29B817D26CE7FC6008FE020 /* Preview Assets.xcassets in Resources */,
 				B29B817A26CE7FC6008FE020 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B29B818026CE7FC6008FE020 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B29B818A26CE7FC6008FE020 /* Resources */ = {
+		B29B81EE26CEC2E8008FE020 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -257,40 +345,43 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B29B817826CE7FC5008FE020 /* ContentView.swift in Sources */,
+				B24B06D526CF963A00379F2C /* SummaryView.swift in Sources */,
+				B282A64226CF474B004870D0 /* Bus_KMBView.swift in Sources */,
+				B29B820426CEC334008FE020 /* Intents.intentdefinition in Sources */,
+				B282A65126CF658F004870D0 /* Bus_KMBDetail.swift in Sources */,
+				B24B06D726CFA27600379F2C /* RoutesHandler.swift in Sources */,
+				B282A65926CF6851004870D0 /* SheetPreventDismiss.swift in Sources */,
+				B282A65B26CF6851004870D0 /* StringFunctions.swift in Sources */,
+				B282A63926CF3B3E004870D0 /* Bus_KMB.swift in Sources */,
+				B24B06DE26CFCCE100379F2C /* LoadingView.swift in Sources */,
+				B282A65526CF6845004870D0 /* ButtonStyles.swift in Sources */,
+				B282A65326CF6828004870D0 /* keyboardFunctions.swift in Sources */,
+				B29B817826CE7FC5008FE020 /* Home.swift in Sources */,
+				B282A65A26CF6851004870D0 /* SharedOptions.swift in Sources */,
 				B29B817626CE7FC5008FE020 /* TransportGraspApp.swift in Sources */,
+				B24B06E126CFCCE100379F2C /* TwoOptionsView.swift in Sources */,
+				B24B06E026CFCCE100379F2C /* PopupAlertView.swift in Sources */,
+				B24B06CF26CF829E00379F2C /* FavouriteRoutes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B29B817E26CE7FC6008FE020 /* Sources */ = {
+		B29B81EC26CEC2E8008FE020 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B29B818726CE7FC6008FE020 /* TransportGraspTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B29B818826CE7FC6008FE020 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B29B819326CE7FC6008FE020 /* TransportGraspUITestsLaunchTests.swift in Sources */,
-				B29B819126CE7FC6008FE020 /* TransportGraspUITests.swift in Sources */,
+				B29B820026CEC32A008FE020 /* IntentHandler.swift in Sources */,
+				B29B820326CEC32A008FE020 /* Intents.intentdefinition in Sources */,
+				B29B820226CEC32A008FE020 /* ETAIntentHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		B29B818426CE7FC6008FE020 /* PBXTargetDependency */ = {
+		B29B81F726CEC2E8008FE020 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B29B817126CE7FC5008FE020 /* TransportGrasp */;
-			targetProxy = B29B818326CE7FC6008FE020 /* PBXContainerItemProxy */;
-		};
-		B29B818E26CE7FC6008FE020 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B29B817126CE7FC5008FE020 /* TransportGrasp */;
-			targetProxy = B29B818D26CE7FC6008FE020 /* PBXContainerItemProxy */;
+			target = B29B81EF26CEC2E8008FE020 /* demoIntent */;
+			targetProxy = B29B81F626CEC2E8008FE020 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -331,7 +422,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
+				ENABLE_TESTABILITY = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -346,7 +437,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -401,9 +492,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -414,14 +506,19 @@
 		B29B819726CE7FC6008FE020 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TransportGrasp/TransportGrasp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TransportGrasp/Preview Content\"";
 				DEVELOPMENT_TEAM = 4T6W96A423;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TransportGrasp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TransGrasp;
+				INFOPLIST_KEY_NSSiriUsageDescription = "For shortcut automation";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -432,7 +529,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.johnnyip.TransportGrasp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -444,14 +541,19 @@
 		B29B819826CE7FC6008FE020 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TransportGrasp/TransportGrasp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TransportGrasp/Preview Content\"";
 				DEVELOPMENT_TEAM = 4T6W96A423;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TransportGrasp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TransGrasp;
+				INFOPLIST_KEY_NSSiriUsageDescription = "For shortcut automation";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -462,7 +564,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.johnnyip.TransportGrasp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -471,99 +573,57 @@
 			};
 			name = Release;
 		};
-		B29B819A26CE7FC6008FE020 /* Debug */ = {
+		B29B81FA26CEC2E8008FE020 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_ENTITLEMENTS = demoIntent/demoIntent.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4T6W96A423;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = demoIntent/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = demoIntent;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
+					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.johnnyip.TransportGraspTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.johnnyip.TransportGrasp.demoIntent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TransportGrasp.app/TransportGrasp";
 			};
 			name = Debug;
 		};
-		B29B819B26CE7FC6008FE020 /* Release */ = {
+		B29B81FB26CEC2E8008FE020 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_ENTITLEMENTS = demoIntent/demoIntent.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4T6W96A423;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = demoIntent/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = demoIntent;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
+					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.johnnyip.TransportGraspTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.johnnyip.TransportGrasp.demoIntent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TransportGrasp.app/TransportGrasp";
-			};
-			name = Release;
-		};
-		B29B819D26CE7FC6008FE020 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4T6W96A423;
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.johnnyip.TransportGraspUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = TransportGrasp;
-			};
-			name = Debug;
-		};
-		B29B819E26CE7FC6008FE020 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4T6W96A423;
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.johnnyip.TransportGraspUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = TransportGrasp;
 			};
 			name = Release;
 		};
@@ -588,25 +648,84 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B29B819926CE7FC6008FE020 /* Build configuration list for PBXNativeTarget "TransportGraspTests" */ = {
+		B29B81F926CEC2E8008FE020 /* Build configuration list for PBXNativeTarget "demoIntent" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B29B819A26CE7FC6008FE020 /* Debug */,
-				B29B819B26CE7FC6008FE020 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B29B819C26CE7FC6008FE020 /* Build configuration list for PBXNativeTarget "TransportGraspUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B29B819D26CE7FC6008FE020 /* Debug */,
-				B29B819E26CE7FC6008FE020 /* Release */,
+				B29B81FA26CEC2E8008FE020 /* Debug */,
+				B29B81FB26CEC2E8008FE020 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B282A63B26CF44BF004870D0 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+		B282A64326CF4921004870D0 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/siteline/SwiftUI-Introspect";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.3;
+			};
+		};
+		B2C8C10E26CFFFB5008DBCDB /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		B2C8C11526D003A2008DBCDB /* XCRemoteSwiftPackageReference "PopupView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/exyte/PopupView";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B24B06D026CF8A7400379F2C /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B282A63B26CF44BF004870D0 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+		B282A63C26CF44BF004870D0 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B282A63B26CF44BF004870D0 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+		B282A64426CF4921004870D0 /* Introspect */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B282A64326CF4921004870D0 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */;
+			productName = Introspect;
+		};
+		B2C8C10F26CFFFB5008DBCDB /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B2C8C10E26CFFFB5008DBCDB /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		B2C8C11326D00184008DBCDB /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B2C8C10E26CFFFB5008DBCDB /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		B2C8C11626D003A2008DBCDB /* PopupView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B2C8C11526D003A2008DBCDB /* XCRemoteSwiftPackageReference "PopupView" */;
+			productName = PopupView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B29B816A26CE7FC5008FE020 /* Project object */;
 }
