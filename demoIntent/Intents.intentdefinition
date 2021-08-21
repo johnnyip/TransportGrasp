@@ -110,7 +110,7 @@
 					<key>INIntentParameterCombinationSupportsBackgroundExecution</key>
 					<true/>
 					<key>INIntentParameterCombinationTitle</key>
-					<string>ETA of ${Routes}</string>
+					<string>Get ETA of favourite public transport</string>
 					<key>INIntentParameterCombinationTitleID</key>
 					<string>FTVy7A</string>
 					<key>INIntentParameterCombinationUpdatesLinked</key>
@@ -135,7 +135,7 @@
 					<key>INIntentParameterCombinationSupportsBackgroundExecution</key>
 					<true/>
 					<key>INIntentParameterCombinationTitle</key>
-					<string>ETA of route</string>
+					<string>Get ETA of favourite public transport</string>
 					<key>INIntentParameterCombinationTitleID</key>
 					<string>8XIcl1</string>
 				</dict>
@@ -261,7 +261,7 @@
 				</array>
 			</dict>
 			<key>INIntentTitle</key>
-			<string>ETA</string>
+			<string>Get ETA of favourite public transport</string>
 			<key>INIntentTitleID</key>
 			<string>5mOCsY</string>
 			<key>INIntentType</key>

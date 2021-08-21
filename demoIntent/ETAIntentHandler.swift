@@ -64,9 +64,10 @@ class ETAIntentHandler: NSObject, ETAIntentHandling{
         //        for favourite in favouriteArray{
         //            targetFavourite = favourite
         //        }
-        if intent.Routes.rawValue <= favouriteArray.count{
+        if intent.Routes.rawValue <= favouriteArray.count, !favouriteArray.isEmpty{
             targetFavourite = favouriteArray[intent.Routes.rawValue-1]
             print("intent.Routes.rawValue \(intent.Routes.rawValue)")
+            print("favouriteArray.count \(favouriteArray.count)")
             
             if !favouriteArray.isEmpty,targetFavourite.favouriteID != 0{
                 

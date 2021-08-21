@@ -28,9 +28,24 @@ class FavouriteRoutes:ObservableObject,Identifiable{
     
     init(){
         retrieveFavourite()
+        donateSiriSuggestion()
     }
     
-    
+    func donateSiriSuggestion(){
+        let intent = ETAIntent()
+        intent.suggestedInvocationPhrase = "Get ETA of public transport"
+        
+        let interaction = INInteraction(intent: intent, response: nil)
+        
+        interaction.donate { error in
+            if let error = error as NSError? {
+                print("Interaction donation failed: \(error.description).")
+            } else {
+                print("Successfully donated interaction.")
+            }
+        }
+
+    }
     
     func checkFavourite(category:String, details:[String:String]) -> Bool{
         for favourite in favouriteArray{

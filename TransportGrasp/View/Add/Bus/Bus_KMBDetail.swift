@@ -49,7 +49,10 @@ struct Bus_KMBDetail: View {
                                         Text(station.name_tc)
                                         Spacer()
                                         Image(systemName: favouriteRoutes.checkFavourite(category: "bus_kmb", details: details) ? "star.fill":"star")
+                                            .font(.title2)
                                             .onTapGesture {
+                                                let impactMed = UIImpactFeedbackGenerator(style: .medium)
+                                                impactMed.impactOccurred()
                                                 if favouriteRoutes.checkFavourite(category: "bus_kmb", details: details){
                                                     for route in favouriteRoutes.favouriteArray{
                                                         if route.details == details, route.category == "bus_kmb"{

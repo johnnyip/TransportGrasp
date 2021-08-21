@@ -11,12 +11,12 @@ import Introspect
 struct Bus_KMBView: View {
     @ObservedObject var favouriteRoutes: FavouriteRoutes
     @ObservedObject var bus_KMB = Bus_KMB()
+    @ObservedObject var sharedOptions: SharedOptions
     
     
     @State var filterString:String = ""
     
     var body: some View {
-        NavigationView{
             ZStack{
                 VStack(spacing:0){
                     
@@ -55,10 +55,20 @@ struct Bus_KMBView: View {
                     }
                     .listStyle(.plain)
                 }
+//                if sharedOptions.loading{
+//                    LoadingView()
+//                }
             }
-            .navigationTitle("KMB")
-            .navigationBarTitleDisplayMode(.inline)
-        }
+            .onAppear {
+//                DispatchQueue.main.async() {
+//                    sharedOptions.startLoading()
+//                }
+            }
+            .onChange(of: bus_KMB.routes) { newValue in
+//                if !newValue.isEmpty{
+//                    sharedOptions.finishedLoading()
+//                }
+            }
     }
 }
 

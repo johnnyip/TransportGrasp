@@ -11,6 +11,8 @@ struct SummaryView: View {
     @ObservedObject var favouriteRoutes: FavouriteRoutes
     @State var routesHandler = RoutesHandler()
     
+    @State var showSheet = false
+    
     func delete(at offsets: IndexSet){
         if let index = offsets.first,
            favouriteRoutes.favouriteArray[index].favouriteID == favouriteRoutes.favouriteArray[index].favouriteID{
@@ -72,6 +74,26 @@ struct SummaryView: View {
                     .listStyle(.plain)
                 }
             }
+            .toolbar{
+                ToolbarItem(placement: .navigationBarLeading){
+                        Button {
+                            let impactMed = UIImpactFeedbackGenerator(style: .medium)
+                            impactMed.impactOccurred()
+                            
+                            self.showSheet = true
+                            
+                        } label: {
+                            Image(systemName: "questionmark.circle")
+                                .font(.system(size: 25))
+                        }
+                    
+                }
+                
+            }
+            .sheet(isPresented: $showSheet,  content: {
+                Help_siriShortcut(showSheet: $showSheet)
+            })
+
             .onAppear(perform: {
                 updateETA()
             })

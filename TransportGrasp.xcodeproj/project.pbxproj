@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 54;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -35,9 +35,11 @@
 		B29B820226CEC32A008FE020 /* ETAIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29B81FE26CEC32A008FE020 /* ETAIntentHandler.swift */; };
 		B29B820326CEC32A008FE020 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = B29B81FF26CEC32A008FE020 /* Intents.intentdefinition */; };
 		B29B820426CEC334008FE020 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = B29B81FF26CEC32A008FE020 /* Intents.intentdefinition */; };
-		B2C8C11026CFFFB5008DBCDB /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = B2C8C10F26CFFFB5008DBCDB /* Alamofire */; };
-		B2C8C11426D00184008DBCDB /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = B2C8C11326D00184008DBCDB /* Alamofire */; };
-		B2C8C11726D003A2008DBCDB /* PopupView in Frameworks */ = {isa = PBXBuildFile; productRef = B2C8C11626D003A2008DBCDB /* PopupView */; };
+		B2AD935226D08BE9002ABD68 /* ActivityIndicatorView in Frameworks */ = {isa = PBXBuildFile; productRef = B2AD935126D08BE9002ABD68 /* ActivityIndicatorView */; };
+		B2AD935426D08F04002ABD68 /* Help_siriShortcut.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AD935326D08F04002ABD68 /* Help_siriShortcut.swift */; };
+		B2AD935726D09876002ABD68 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = B2AD935626D09876002ABD68 /* Alamofire */; };
+		B2AD935926D0987F002ABD68 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = B2AD935826D0987F002ABD68 /* Alamofire */; };
+		B2C8C11B26D00C79008DBCDB /* Add.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C8C11A26D00C79008DBCDB /* Add.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +96,8 @@
 		B29B81FC26CEC32A008FE020 /* IntentHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
 		B29B81FE26CEC32A008FE020 /* ETAIntentHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ETAIntentHandler.swift; sourceTree = "<group>"; };
 		B29B81FF26CEC32A008FE020 /* Intents.intentdefinition */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
+		B2AD935326D08F04002ABD68 /* Help_siriShortcut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Help_siriShortcut.swift; sourceTree = "<group>"; };
+		B2C8C11A26D00C79008DBCDB /* Add.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Add.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,9 +105,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2C8C11726D003A2008DBCDB /* PopupView in Frameworks */,
-				B2C8C11026CFFFB5008DBCDB /* Alamofire in Frameworks */,
 				B282A63D26CF44BF004870D0 /* SwiftyJSON in Frameworks */,
+				B2AD935726D09876002ABD68 /* Alamofire in Frameworks */,
+				B2AD935226D08BE9002ABD68 /* ActivityIndicatorView in Frameworks */,
 				B282A64526CF4921004870D0 /* Introspect in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -112,7 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2C8C11426D00184008DBCDB /* Alamofire in Frameworks */,
+				B2AD935926D0987F002ABD68 /* Alamofire in Frameworks */,
 				B24B06D126CF8A7400379F2C /* SwiftyJSON in Frameworks */,
 				B29B81F126CEC2E8008FE020 /* Intents.framework in Frameworks */,
 			);
@@ -134,13 +138,11 @@
 		B282A63626CF3B13004870D0 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B2AD935326D08F04002ABD68 /* Help_siriShortcut.swift */,
 				B24B06D426CF963A00379F2C /* SummaryView.swift */,
-				B282A63E26CF4715004870D0 /* Bus */,
+				B2C8C11926D00C68008DBCDB /* Add */,
 				B29B817726CE7FC5008FE020 /* Home.swift */,
-				B24B06D826CFCCE100379F2C /* AlertView */,
-				B24B06D926CFCCE100379F2C /* LoadingView.swift */,
-				B24B06DB26CFCCE100379F2C /* PopupAlertView.swift */,
-				B24B06DC26CFCCE100379F2C /* TwoOptionsView.swift */,
+				B2C8C11826D00C16008DBCDB /* CommonView */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -228,6 +230,26 @@
 			path = demoIntent;
 			sourceTree = "<group>";
 		};
+		B2C8C11826D00C16008DBCDB /* CommonView */ = {
+			isa = PBXGroup;
+			children = (
+				B24B06D826CFCCE100379F2C /* AlertView */,
+				B24B06D926CFCCE100379F2C /* LoadingView.swift */,
+				B24B06DB26CFCCE100379F2C /* PopupAlertView.swift */,
+				B24B06DC26CFCCE100379F2C /* TwoOptionsView.swift */,
+			);
+			path = CommonView;
+			sourceTree = "<group>";
+		};
+		B2C8C11926D00C68008DBCDB /* Add */ = {
+			isa = PBXGroup;
+			children = (
+				B2C8C11A26D00C79008DBCDB /* Add.swift */,
+				B282A63E26CF4715004870D0 /* Bus */,
+			);
+			path = Add;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -249,8 +271,8 @@
 			packageProductDependencies = (
 				B282A63C26CF44BF004870D0 /* SwiftyJSON */,
 				B282A64426CF4921004870D0 /* Introspect */,
-				B2C8C10F26CFFFB5008DBCDB /* Alamofire */,
-				B2C8C11626D003A2008DBCDB /* PopupView */,
+				B2AD935126D08BE9002ABD68 /* ActivityIndicatorView */,
+				B2AD935626D09876002ABD68 /* Alamofire */,
 			);
 			productName = TransportGrasp;
 			productReference = B29B817226CE7FC5008FE020 /* TransportGrasp.app */;
@@ -271,7 +293,7 @@
 			name = demoIntent;
 			packageProductDependencies = (
 				B24B06D026CF8A7400379F2C /* SwiftyJSON */,
-				B2C8C11326D00184008DBCDB /* Alamofire */,
+				B2AD935826D0987F002ABD68 /* Alamofire */,
 			);
 			productName = demoIntent;
 			productReference = B29B81F026CEC2E8008FE020 /* demoIntent.appex */;
@@ -296,7 +318,7 @@
 				};
 			};
 			buildConfigurationList = B29B816D26CE7FC5008FE020 /* Build configuration list for PBXProject "TransportGrasp" */;
-			compatibilityVersion = "Xcode 12.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -307,8 +329,8 @@
 			packageReferences = (
 				B282A63B26CF44BF004870D0 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
 				B282A64326CF4921004870D0 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */,
-				B2C8C10E26CFFFB5008DBCDB /* XCRemoteSwiftPackageReference "Alamofire" */,
-				B2C8C11526D003A2008DBCDB /* XCRemoteSwiftPackageReference "PopupView" */,
+				B2AD935026D08BE9002ABD68 /* XCRemoteSwiftPackageReference "ActivityIndicatorView" */,
+				B2AD935526D09876002ABD68 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = B29B817326CE7FC5008FE020 /* Products */;
 			projectDirPath = "";
@@ -354,6 +376,8 @@
 				B282A65B26CF6851004870D0 /* StringFunctions.swift in Sources */,
 				B282A63926CF3B3E004870D0 /* Bus_KMB.swift in Sources */,
 				B24B06DE26CFCCE100379F2C /* LoadingView.swift in Sources */,
+				B2C8C11B26D00C79008DBCDB /* Add.swift in Sources */,
+				B2AD935426D08F04002ABD68 /* Help_siriShortcut.swift in Sources */,
 				B282A65526CF6845004870D0 /* ButtonStyles.swift in Sources */,
 				B282A65326CF6828004870D0 /* keyboardFunctions.swift in Sources */,
 				B29B817826CE7FC5008FE020 /* Home.swift in Sources */,
@@ -511,7 +535,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = TransportGrasp/TransportGrasp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"TransportGrasp/Preview Content\"";
 				DEVELOPMENT_TEAM = 4T6W96A423;
 				ENABLE_PREVIEWS = YES;
@@ -546,7 +570,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = TransportGrasp/TransportGrasp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"TransportGrasp/Preview Content\"";
 				DEVELOPMENT_TEAM = 4T6W96A423;
 				ENABLE_PREVIEWS = YES;
@@ -676,19 +700,19 @@
 				minimumVersion = 0.1.3;
 			};
 		};
-		B2C8C10E26CFFFB5008DBCDB /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+		B2AD935026D08BE9002ABD68 /* XCRemoteSwiftPackageReference "ActivityIndicatorView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/exyte/ActivityIndicatorView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.7;
+			};
+		};
+		B2AD935526D09876002ABD68 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire";
 			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
-		B2C8C11526D003A2008DBCDB /* XCRemoteSwiftPackageReference "PopupView" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/exyte/PopupView";
-			requirement = {
-				branch = master;
+				branch = xcode13;
 				kind = branch;
 			};
 		};
@@ -710,20 +734,20 @@
 			package = B282A64326CF4921004870D0 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */;
 			productName = Introspect;
 		};
-		B2C8C10F26CFFFB5008DBCDB /* Alamofire */ = {
+		B2AD935126D08BE9002ABD68 /* ActivityIndicatorView */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = B2C8C10E26CFFFB5008DBCDB /* XCRemoteSwiftPackageReference "Alamofire" */;
+			package = B2AD935026D08BE9002ABD68 /* XCRemoteSwiftPackageReference "ActivityIndicatorView" */;
+			productName = ActivityIndicatorView;
+		};
+		B2AD935626D09876002ABD68 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B2AD935526D09876002ABD68 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
 		};
-		B2C8C11326D00184008DBCDB /* Alamofire */ = {
+		B2AD935826D0987F002ABD68 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = B2C8C10E26CFFFB5008DBCDB /* XCRemoteSwiftPackageReference "Alamofire" */;
+			package = B2AD935526D09876002ABD68 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
-		};
-		B2C8C11626D003A2008DBCDB /* PopupView */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B2C8C11526D003A2008DBCDB /* XCRemoteSwiftPackageReference "PopupView" */;
-			productName = PopupView;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -39,7 +39,6 @@ struct KMB_routeStation:Hashable,Codable,Identifiable{
 
 
 class Bus_KMB:ObservableObject,Identifiable{
-    
     @Published var routes:[KMB] = []
     @Published var route_stations:[KMB_routeStation] = []
     

@@ -8,7 +8,6 @@
 import Foundation
 
 class SharedOptions: ObservableObject {
-    @Published var loggined = false
     @Published var loading: Bool = false
         
     func startLoading(){

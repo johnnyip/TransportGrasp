@@ -2,20 +2,20 @@
   "object": {
     "pins": [
       {
-        "package": "Alamofire",
-        "repositoryURL": "https://github.com/Alamofire/Alamofire",
+        "package": "ActivityIndicatorView",
+        "repositoryURL": "https://github.com/exyte/ActivityIndicatorView.git",
         "state": {
-          "branch": "master",
-          "revision": "c38feeb32cd728928da82ecec6fca43f398dfe22",
-          "version": null
+          "branch": null,
+          "revision": "04be6321d482f6bce9e3c9412e419831d88a5327",
+          "version": "0.0.7"
         }
       },
       {
-        "package": "PopupView",
-        "repositoryURL": "https://github.com/exyte/PopupView",
+        "package": "Alamofire",
+        "repositoryURL": "https://github.com/Alamofire/Alamofire",
         "state": {
-          "branch": "master",
-          "revision": "779a888f74e747d014fbd63e38f79cf62d108053",
+          "branch": "xcode13",
+          "revision": "b1205a15ce933edb616b8aab29e41746281a0f53",
           "version": null
         }
       },
