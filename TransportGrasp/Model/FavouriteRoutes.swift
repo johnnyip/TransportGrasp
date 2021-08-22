@@ -85,6 +85,10 @@ class FavouriteRoutes:ObservableObject,Identifiable{
     
     func updateETA(){
         for (index,route) in favouriteArray.enumerated(){
+            favouriteArray[index].eta = []
+        }
+        
+        for (index,route) in favouriteArray.enumerated(){
             if route.category == "bus_kmb"{
                 eta_bus_kmb(index: index, favourite: route)
             }else if route.category.contains("mtr"){
@@ -128,7 +132,7 @@ class FavouriteRoutes:ObservableObject,Identifiable{
                         if let date_ = dateFormatter.date(from: time){
                             let cal = Calendar.current.dateComponents([.minute], from: Date(), to: date_)
                             if let minutes = cal.minute{
-                                etaMins = "\(minutes) mins"
+                                etaMins = "\(minutes) 分鐘"
                             }
                         }
                             tempResultString += "\(etaMins)"
@@ -172,7 +176,7 @@ class FavouriteRoutes:ObservableObject,Identifiable{
                         if let date_ = dateFormatter.date(from: eta){
                             let cal = Calendar.current.dateComponents([.minute], from: Date(), to: date_)
                             if let minutes = cal.minute{
-                                etaMins = "\(minutes) mins"
+                                etaMins = "\(minutes) 分鐘"
                             }
                         }
                         if dir == dir_{

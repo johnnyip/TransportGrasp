@@ -19,11 +19,11 @@ struct MTR: Hashable, Codable, Identifiable {
 
 class MTR_Airport:Identifiable{
     var stations:[MTR] = [
-        MTR(line: "Airport", lineCode:"AEL", station: "博覽館", stationCode: "AWE"),
-        MTR(line: "Airport", lineCode:"AEL", station: "機場", stationCode: "AIR"),
-        MTR(line: "Airport", lineCode:"AEL", station: "青衣", stationCode: "TSY"),
-        MTR(line: "Airport", lineCode:"AEL", station: "九龍", stationCode: "KOW"),
-        MTR(line: "Airport", lineCode:"AEL", station: "香港", stationCode: "HOK")
+        MTR(line: "機場快綫", lineCode:"AEL", station: "博覽館", stationCode: "AWE"),
+        MTR(line: "機場快綫", lineCode:"AEL", station: "機場", stationCode: "AIR"),
+        MTR(line: "機場快綫", lineCode:"AEL", station: "青衣", stationCode: "TSY"),
+        MTR(line: "機場快綫", lineCode:"AEL", station: "九龍", stationCode: "KOW"),
+        MTR(line: "機場快綫", lineCode:"AEL", station: "香港", stationCode: "HOK")
     ]
     
     var stationDict: [String:String] = ["AWE":"博覽館",
@@ -35,14 +35,14 @@ class MTR_Airport:Identifiable{
 
 class MTR_TungChung:Identifiable{
     var stations:[MTR] = [
-        MTR(line: "TungChung", lineCode:"TCL", station: "東涌", stationCode: "TUC"),
-        MTR(line: "TungChung", lineCode:"TCL", station: "欣澳", stationCode: "SUN"),
-        MTR(line: "TungChung", lineCode:"TCL", station: "青衣", stationCode: "TSY"),
-        MTR(line: "TungChung", lineCode:"TCL", station: "荔景", stationCode: "LAK"),
-        MTR(line: "TungChung", lineCode:"TCL", station: "南昌", stationCode: "NAC"),
-        MTR(line: "TungChung", lineCode:"TCL", station: "奧運", stationCode: "OLY"),
-        MTR(line: "TungChung", lineCode:"TCL", station: "九龍", stationCode: "KOW"),
-        MTR(line: "TungChung", lineCode:"TCL", station: "香港", stationCode: "HOK")
+        MTR(line: "東涌綫", lineCode:"TCL", station: "東涌", stationCode: "TUC"),
+        MTR(line: "東涌綫", lineCode:"TCL", station: "欣澳", stationCode: "SUN"),
+        MTR(line: "東涌綫", lineCode:"TCL", station: "青衣", stationCode: "TSY"),
+        MTR(line: "東涌綫", lineCode:"TCL", station: "荔景", stationCode: "LAK"),
+        MTR(line: "東涌綫", lineCode:"TCL", station: "南昌", stationCode: "NAC"),
+        MTR(line: "東涌綫", lineCode:"TCL", station: "奧運", stationCode: "OLY"),
+        MTR(line: "東涌綫", lineCode:"TCL", station: "九龍", stationCode: "KOW"),
+        MTR(line: "東涌綫", lineCode:"TCL", station: "香港", stationCode: "HOK")
     ]
     
     var stationDict: [String:String] = ["TUC":"東涌",
@@ -57,33 +57,33 @@ class MTR_TungChung:Identifiable{
 
 class MTR_TuenMa:Identifiable{
     var stations:[MTR] = [
-        MTR(line: "TuenMa", lineCode: "TML", station: "屯門", stationCode: "TUM"),
-        MTR(line: "TuenMa", lineCode: "TML", station: "兆康", stationCode: "SIH"),
-        MTR(line: "TuenMa", lineCode: "TML", station: "天水圍", stationCode: "TIS"),
-        MTR(line: "TuenMa", lineCode: "TML", station: "朗屏", stationCode: "LOP"),
-        MTR(line: "TuenMa", lineCode: "TML", station: "元朗", stationCode: "YUL"),
-        MTR(line: "TuenMa", lineCode: "TML", station: "錦上路", stationCode: "KSR"),
-        MTR(line: "TuenMa", lineCode: "TML", station: "荃灣西", stationCode: "TWW"),
-        MTR(line: "TuenMa", lineCode: "TML", station: "美孚", stationCode: "MEF"),
-        MTR(line: "TuenMa", lineCode: "TML", station: "南昌", stationCode: "NAC"),
-        MTR(line: "TuenMa", lineCode: "TML", station: "柯士甸", stationCode: "AUS"),
-        MTR(line: "TuenMa", lineCode: "TML", station: "尖東", stationCode: "ETS"),
-        MTR(line: "TuenMa", lineCode: "TML", station: "紅磡", stationCode: "HUH"),
-        MTR(line: "TuenMa", lineCode: "TML", station: "何文田", stationCode: "HOM"),
-        MTR(line: "TuenMa", lineCode: "TML", station: "土瓜灣", stationCode: "TKW"),
-        MTR(line: "TuenMa", lineCode: "TML", station: "宋皇臺", stationCode: "SUW"),
-        MTR(line: "TuenMa", lineCode: "TML", station: "啟德", stationCode: "KAT"),
-        MTR(line: "TuenMa", lineCode: "TML", station: "鑽石山", stationCode: "DIH"),
-        MTR(line: "TuenMa", lineCode: "TML", station: "顯徑", stationCode: "HIK"),
-        MTR(line: "TuenMa", lineCode: "TML", station: "大圍", stationCode: "TAW"),
-        MTR(line: "TuenMa", lineCode: "TML", station: "車公廟", stationCode: "CKT"),
-        MTR(line: "TuenMa", lineCode: "TML", station: "沙田圍", stationCode: "STW"),
-        MTR(line: "TuenMa", lineCode: "TML", station: "第一城", stationCode: "CIO"),
-        MTR(line: "TuenMa", lineCode: "TML", station: "石門", stationCode: "SHM"),
-        MTR(line: "TuenMa", lineCode: "TML", station: "大水坑", stationCode: "TSH"),
-        MTR(line: "TuenMa", lineCode: "TML", station: "恒安", stationCode: "HEO"),
-        MTR(line: "TuenMa", lineCode: "TML", station: "馬鞍山", stationCode: "MOS"),
-        MTR(line: "TuenMa", lineCode: "TML", station: "烏溪沙", stationCode: "WKS")
+        MTR(line: "屯馬綫", lineCode: "TML", station: "屯門", stationCode: "TUM"),
+        MTR(line: "屯馬綫", lineCode: "TML", station: "兆康", stationCode: "SIH"),
+        MTR(line: "屯馬綫", lineCode: "TML", station: "天水圍", stationCode: "TIS"),
+        MTR(line: "屯馬綫", lineCode: "TML", station: "朗屏", stationCode: "LOP"),
+        MTR(line: "屯馬綫", lineCode: "TML", station: "元朗", stationCode: "YUL"),
+        MTR(line: "屯馬綫", lineCode: "TML", station: "錦上路", stationCode: "KSR"),
+        MTR(line: "屯馬綫", lineCode: "TML", station: "荃灣西", stationCode: "TWW"),
+        MTR(line: "屯馬綫", lineCode: "TML", station: "美孚", stationCode: "MEF"),
+        MTR(line: "屯馬綫", lineCode: "TML", station: "南昌", stationCode: "NAC"),
+        MTR(line: "屯馬綫", lineCode: "TML", station: "柯士甸", stationCode: "AUS"),
+        MTR(line: "屯馬綫", lineCode: "TML", station: "尖東", stationCode: "ETS"),
+        MTR(line: "屯馬綫", lineCode: "TML", station: "紅磡", stationCode: "HUH"),
+        MTR(line: "屯馬綫", lineCode: "TML", station: "何文田", stationCode: "HOM"),
+        MTR(line: "屯馬綫", lineCode: "TML", station: "土瓜灣", stationCode: "TKW"),
+        MTR(line: "屯馬綫", lineCode: "TML", station: "宋皇臺", stationCode: "SUW"),
+        MTR(line: "屯馬綫", lineCode: "TML", station: "啟德", stationCode: "KAT"),
+        MTR(line: "屯馬綫", lineCode: "TML", station: "鑽石山", stationCode: "DIH"),
+        MTR(line: "屯馬綫", lineCode: "TML", station: "顯徑", stationCode: "HIK"),
+        MTR(line: "屯馬綫", lineCode: "TML", station: "大圍", stationCode: "TAW"),
+        MTR(line: "屯馬綫", lineCode: "TML", station: "車公廟", stationCode: "CKT"),
+        MTR(line: "屯馬綫", lineCode: "TML", station: "沙田圍", stationCode: "STW"),
+        MTR(line: "屯馬綫", lineCode: "TML", station: "第一城", stationCode: "CIO"),
+        MTR(line: "屯馬綫", lineCode: "TML", station: "石門", stationCode: "SHM"),
+        MTR(line: "屯馬綫", lineCode: "TML", station: "大水坑", stationCode: "TSH"),
+        MTR(line: "屯馬綫", lineCode: "TML", station: "恒安", stationCode: "HEO"),
+        MTR(line: "屯馬綫", lineCode: "TML", station: "馬鞍山", stationCode: "MOS"),
+        MTR(line: "屯馬綫", lineCode: "TML", station: "烏溪沙", stationCode: "WKS")
     ]
     var stationDict: [String:String] = ["TUM":"屯門",
                                         "SIH":"兆康",
@@ -117,14 +117,14 @@ class MTR_TuenMa:Identifiable{
 
 class MTR_TKO:Identifiable{
     var stations:[MTR] = [
-        MTR(line: "TKO", lineCode: "TKL", station: "寶琳", stationCode: "POA"),
-        MTR(line: "TKO", lineCode: "TKL", station: "坑口", stationCode: "HAH"),
-        MTR(line: "TKO", lineCode: "TKL", station: "康城", stationCode: "LHP"),
-        MTR(line: "TKO", lineCode: "TKL", station: "將軍澳", stationCode: "TKO"),
-        MTR(line: "TKO", lineCode: "TKL", station: "調景嶺", stationCode: "TIK"),
-        MTR(line: "TKO", lineCode: "TKL", station: "油塘", stationCode: "YAT"),
-        MTR(line: "TKO", lineCode: "TKL", station: "鰂魚涌", stationCode: "QUB"),
-        MTR(line: "TKO", lineCode: "TKL", station: "北角", stationCode: "NOP")
+        MTR(line: "將軍澳綫", lineCode: "TKL", station: "寶琳", stationCode: "POA"),
+        MTR(line: "將軍澳綫", lineCode: "TKL", station: "坑口", stationCode: "HAH"),
+        MTR(line: "將軍澳綫", lineCode: "TKL", station: "康城", stationCode: "LHP"),
+        MTR(line: "將軍澳綫", lineCode: "TKL", station: "將軍澳", stationCode: "TKO"),
+        MTR(line: "將軍澳綫", lineCode: "TKL", station: "調景嶺", stationCode: "TIK"),
+        MTR(line: "將軍澳綫", lineCode: "TKL", station: "油塘", stationCode: "YAT"),
+        MTR(line: "將軍澳綫", lineCode: "TKL", station: "鰂魚涌", stationCode: "QUB"),
+        MTR(line: "將軍澳綫", lineCode: "TKL", station: "北角", stationCode: "NOP")
     ]
     var stationDict: [String:String] = ["POA":"寶琳",
                                         "HAH":"坑口",

@@ -33,7 +33,7 @@ class ETAIntentHandler: NSObject, ETAIntentHandling{
         if let result_ = dateFormatter.date(from: dateString){
             let cal = Calendar.current.dateComponents([.minute], from: Date(), to: result_)
             if let minutes = cal.minute{
-                resultString = "\(minutes) mins"
+                resultString = "\(minutes) 分鐘"
             }
         }
         return resultString
@@ -86,18 +86,27 @@ class ETAIntentHandler: NSObject, ETAIntentHandling{
                         case .success(let _data):
                             print("result get")
                             //setting header
-                            resultString += "\(route) \(routeOrig) -> \(routeDest)\n\(stopName)\n"
-                            print("dir: \(dir)")
+                            resultString += "[\(route)] \(routeOrig) -> \(routeDest)\n\(stopName)站\n\n"
                             
                             let json = JSON(_data)
                             json["data"].arrayValue.map{
                                 let eta = $0["eta"].stringValue
                                 let dir_ = $0["dir"].stringValue
                                 let remarks = $0["rmk_tc"].stringValue
-                                let etaMins = self.getIntervals(dateString: eta)
+                                var etaMins = ""
                                 
+
                                 if dir == dir_{
-                                    resultString += "\(etaMins)"
+                                    let dateFormatter = DateFormatter()
+                                    dateFormatter.timeZone = TimeZone(identifier: TimeZone.current.identifier)
+                                    dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZZZZZ"
+                                    if let result_ = dateFormatter.date(from: eta){
+                                        let cal = Calendar.current.dateComponents([.minute], from: Date(), to: result_)
+                                        if let minutes = cal.minute{
+                                            etaMins += "\(minutes) 分鐘"
+                                        }
+                                    }
+                                    resultString += etaMins
                                     if remarks == "原定班次" {resultString += "(預計)\n"}
                                     else if remarks != "" { resultString += " \(remarks)\n" }
                                     else{ resultString += "\n" }
@@ -109,6 +118,55 @@ class ETAIntentHandler: NSObject, ETAIntentHandling{
                         }
                     }
                 }
+                
+                if targetFavourite.category.contains("mtr"),
+                   let lineCode = targetFavourite.details["lineCode"],
+                   let stationCode = targetFavourite.details["stationCode"],
+                   let dir = targetFavourite.details["dir"],
+                   let destStation = targetFavourite.details["dest"],
+                   let line = targetFavourite.details["line"],
+                   let origStation = targetFavourite.details["orig"],
+                   let station = targetFavourite.details["station"]{
+               
+                    
+                    let request = AF.request("https://rt.data.gov.hk/v1/transport/mtr/getSchedule.php?line=\(lineCode)&sta=\(stationCode)&lang=TC")
+                    request.responseJSON { response in
+                        switch response.result{
+                        case .success(let _data):
+                            print("result get")
+                            //setting header
+                            resultString = "[\(line)]\(origStation)->\(destStation)\n\(station)站\n\n"
+                            print("dir: \(dir)")
+                            
+                            let json = JSON(_data)
+                            if json["isdelay"] == "Y"{
+                                resultString += "班次有延誤"
+                            }
+                            
+                            print("data \(json)")
+                            json["data"]["\(lineCode)-\(stationCode)"][dir].arrayValue.map{
+                                print("value: \($0)")
+                                let time = $0["time"].stringValue
+                                var etaMins = ""
+                                
+                                let dateFormatter = DateFormatter()
+                                dateFormatter.timeZone = TimeZone(identifier: TimeZone.current.identifier)
+                                dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+                                if let date_ = dateFormatter.date(from: time){
+                                    let cal = Calendar.current.dateComponents([.minute], from: Date(), to: date_)
+                                    if let minutes = cal.minute{
+                                        etaMins = "\(minutes) 分鐘"
+                                    }
+                                }
+                                resultString += "\(etaMins)\n"
+                            }
+                            completion(.success(eta: resultString))
+                        default:
+                            break;
+                        }
+                    }
+                }
+                
             }else{
                 completion(.success(eta: "Error"))
             }
@@ -118,4 +176,6 @@ class ETAIntentHandler: NSObject, ETAIntentHandling{
             
         }
     }
+    
+    
 }

@@ -53,7 +53,7 @@ class RoutesHandler{
            let route = targetRoute.details["route"],
            let orig = targetRoute.details["routeOrig"],
            let dest = targetRoute.details["routeDest"]{
-            resultString = "\(route) \(orig) -> \(dest)"
+            resultString = "[\(route)] \(orig) -> \(dest)"
         }
         else if targetRoute.category.contains("mtr"),
                 let destStation = targetRoute.details["dest"],

@@ -50,22 +50,20 @@ struct SummaryView: View {
                                         .background(routesHandler.getCatrgoryColor(targetRoute: route))
                                         .cornerRadius(5)
                                 }
-                                HStack{
-                                    Text(routesHandler.getTitle(targetRoute: route))
-                                        .fontWeight(.heavy)
-                                    Spacer()
-                                }
-                                HStack{
-                                    //                                        Divider()
-                                    HStack{
+                                HStack(alignment:.top){
+                                    VStack(alignment:.leading){
+                                        Text(routesHandler.getTitle(targetRoute: route))
+                                            .fontWeight(.heavy)
                                         Text(routesHandler.getStationName(targetRoute: route))
-                                        Spacer()
-                                        VStack(alignment:.leading){
-                                            ForEach(route.eta,id:\.self){ eta in
-                                                Text(eta)
-                                            }
+                                    }
+                                    Spacer()
+                                    Divider()
+                                    VStack(alignment:.leading){
+                                        ForEach(route.eta,id:\.self){ eta in
+                                            Text(eta)
                                         }
                                     }
+                                    
                                 }
                             }
                         }
@@ -76,24 +74,36 @@ struct SummaryView: View {
             }
             .toolbar{
                 ToolbarItem(placement: .navigationBarLeading){
-                        Button {
-                            let impactMed = UIImpactFeedbackGenerator(style: .medium)
-                            impactMed.impactOccurred()
-                            
-                            self.showSheet = true
-                            
-                        } label: {
-                            Image(systemName: "questionmark.circle")
-                                .font(.system(size: 25))
-                        }
+                    Button {
+                        let impactMed = UIImpactFeedbackGenerator(style: .medium)
+                        impactMed.impactOccurred()
+                        
+                        self.showSheet = true
+                        
+                    } label: {
+                        Image(systemName: "questionmark.circle")
+                            .font(.system(size: 25))
+                    }
                     
+                }
+                ToolbarItem(placement: .navigationBarTrailing){
+                    Button {
+                        let impactMed = UIImpactFeedbackGenerator(style: .medium)
+                        impactMed.impactOccurred()
+                        
+                        favouriteRoutes.updateETA()
+                        
+                    } label: {
+                        Image(systemName: "arrow.clockwise")
+                            .font(.system(size: 25))
+                    }
                 }
                 
             }
             .sheet(isPresented: $showSheet,  content: {
                 Help_siriShortcut(showSheet: $showSheet)
             })
-
+            
             .onAppear(perform: {
                 updateETA()
                 print("Arr: \(favouriteRoutes.favouriteArray)")
