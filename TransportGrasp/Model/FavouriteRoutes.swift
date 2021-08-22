@@ -54,7 +54,6 @@ class FavouriteRoutes:ObservableObject,Identifiable{
             }
         }
         return false
-        
     }
     
     func retrieveFavourite(){
@@ -88,9 +87,59 @@ class FavouriteRoutes:ObservableObject,Identifiable{
         for (index,route) in favouriteArray.enumerated(){
             if route.category == "bus_kmb"{
                 eta_bus_kmb(index: index, favourite: route)
+            }else if route.category.contains("mtr"){
+                eta_mtr(index: index, favourite: route)
             }
+
             
             //            favouriteArray[index].eta = RoutesHandler().getIntervals(favourite: route)
+        }
+    }
+    
+    func eta_mtr(index:Int,favourite:Favourite){
+        var tempETA:[String] = []
+        if let lineCode = favourite.details["lineCode"],
+           let stationCode = favourite.details["stationCode"],
+           let dir = favourite.details["dir"]{
+            
+            let request = AF.request("https://rt.data.gov.hk/v1/transport/mtr/getSchedule.php?line=\(lineCode)&sta=\(stationCode)&lang=TC")
+            request.responseJSON { response in
+                switch response.result{
+                case .success(let _data):
+                    print("result get")
+                    //setting header
+                    print("dir: \(dir)")
+                    
+                    let json = JSON(_data)
+                    if json["isdelay"] == "Y"{
+                        tempETA.append("班次有延誤")
+                    }
+                    
+                    print("data \(json)")
+                    json["data"]["\(lineCode)-\(stationCode)"][dir].arrayValue.map{
+                        print("value: \($0)")
+                        var tempResultString = ""
+                        let time = $0["time"].stringValue
+                        var etaMins = ""
+                        
+                        let dateFormatter = DateFormatter()
+                        dateFormatter.timeZone = TimeZone(identifier: TimeZone.current.identifier)
+                        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+                        if let date_ = dateFormatter.date(from: time){
+                            let cal = Calendar.current.dateComponents([.minute], from: Date(), to: date_)
+                            if let minutes = cal.minute{
+                                etaMins = "\(minutes) mins"
+                            }
+                        }
+                            tempResultString += "\(etaMins)"
+                            tempETA.append(tempResultString)
+                    }
+                    print("final ETA \(tempETA)")
+                    self.favouriteArray[index].eta = tempETA
+                default:
+                    break;
+                }
+            }
         }
     }
     
@@ -141,5 +190,6 @@ class FavouriteRoutes:ObservableObject,Identifiable{
             }
         }
     }
+    
 }
 

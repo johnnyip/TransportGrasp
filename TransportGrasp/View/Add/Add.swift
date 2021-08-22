@@ -34,7 +34,7 @@ struct Add: View {
                                     .padding(.horizontal,15)
                                     .padding(20)
                                     .background(Color.init("kmbRed"))
-                                    .foregroundColor(.black)
+                                    .foregroundColor(.white)
                                     .cornerRadius(20)
                                 
                             }
@@ -42,30 +42,59 @@ struct Add: View {
                         Divider()
                     }
                     
-//                    //MTR
-//                    Group{
-//                        HStack{
-//                            Image(systemName: "tram.tunnel.fill")
-//                                .font(.title)
-//                            Text("MTR")
-//                                .font(.title)
-//                        }
-//                        HStack{
-//                            NavigationLink(destination: Bus_KMBView(favouriteRoutes: self.favouriteRoutes)) {
-//                                Text("MTR")
-//                                    .font(.title2)
-//                                    .padding(.horizontal,15)
-//                                    .padding(20)
-//                                    .background(Color.init("kmbRed"))
-//                                    .foregroundColor(.black)
-//                                    .cornerRadius(20)
-//
-//                            }
-//                        }
-//                        Divider()
-//                    }
-//
-//
+                    //MTR
+                    Group{
+                        HStack{
+                            Image(systemName: "tram.tunnel.fill")
+                                .font(.title)
+                            Text("MTR")
+                                .font(.title)
+                        }
+                        HStack{
+                            NavigationLink(destination: MTR_TungChungView(favouriteRoutes: self.favouriteRoutes)) {
+                                Text("東涌綫")
+                                    .font(.title2)
+                                    .padding(.horizontal,15)
+                                    .padding(20)
+                                    .background(Color.init("mtrTungChung"))
+                                    .foregroundColor(.white)
+                                    .cornerRadius(20)
+                            }
+                            NavigationLink(destination: MTR_TuenMaView(favouriteRoutes: self.favouriteRoutes)) {
+                                Text("屯馬綫")
+                                    .font(.title2)
+                                    .padding(.horizontal,15)
+                                    .padding(20)
+                                    .background(Color.init("mtrTuenMa"))
+                                    .foregroundColor(.white)
+                                    .cornerRadius(20)
+                            }
+                        }
+                        HStack{
+                            NavigationLink(destination: MTR_TKOView(favouriteRoutes: self.favouriteRoutes)) {
+                                Text("將軍澳綫")
+                                    .font(.title2)
+                                    .padding(.horizontal,15)
+                                    .padding(20)
+                                    .background(Color.init("mtrTKO"))
+                                    .foregroundColor(.white)
+                                    .cornerRadius(20)
+                            }
+                            NavigationLink(destination: MTR_AirportView(favouriteRoutes: self.favouriteRoutes)) {
+                                Text("機場快綫")
+                                    .font(.title2)
+                                    .padding(.horizontal,15)
+                                    .padding(20)
+                                    .background(Color.init("mtrAirport"))
+                                    .foregroundColor(.white)
+                                    .cornerRadius(20)
+                            }
+                        }
+
+                        Divider()
+                    }
+
+
 //                    //LightRail
 //                    Group{
 //                        HStack{
@@ -117,7 +146,7 @@ struct Add: View {
                     Spacer()
                 }
             }
-            .navigationTitle("KMB")
+            .navigationTitle("Add")
             .navigationBarTitleDisplayMode(.inline)
         }
     }

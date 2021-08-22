@@ -65,7 +65,7 @@ struct Bus_KMBDetail: View {
                                                         self.showAlert = true
                                                     }
                                                     else{
-                                                    favouriteRoutes.saveFavourite(category: "bus_kmb", details: details)
+                                                        favouriteRoutes.saveFavourite(category: "bus_kmb", details: details)
                                                     }
                                                 }
                                             }
@@ -77,16 +77,16 @@ struct Bus_KMBDetail: View {
                 }
             }
             .padding()
-
+            
         }
         .alert(isPresented: $showAlert) {
             Alert(title: Text(alertText))
         }
-
+        
         .onAppear {
             loadStations()
         }
-
+        
         .navigationTitle(route.route)
     }
 }

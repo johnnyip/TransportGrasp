@@ -47,7 +47,7 @@ struct SummaryView: View {
                                     Text(routesHandler.getCategory(targetRoute: route))
                                         .padding(2)
                                         .foregroundColor(.white)
-                                        .background(Color.red)
+                                        .background(routesHandler.getCatrgoryColor(targetRoute: route))
                                         .cornerRadius(5)
                                 }
                                 HStack{
@@ -96,6 +96,7 @@ struct SummaryView: View {
 
             .onAppear(perform: {
                 updateETA()
+                print("Arr: \(favouriteRoutes.favouriteArray)")
             })
             .navigationTitle("Summary")
             .navigationBarTitleDisplayMode(.inline)
