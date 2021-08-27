@@ -35,6 +35,7 @@
 		B29B820226CEC32A008FE020 /* ETAIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29B81FE26CEC32A008FE020 /* ETAIntentHandler.swift */; };
 		B29B820326CEC32A008FE020 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = B29B81FF26CEC32A008FE020 /* Intents.intentdefinition */; };
 		B29B820426CEC334008FE020 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = B29B81FF26CEC32A008FE020 /* Intents.intentdefinition */; };
+		B29DC74926D2A4B4001E766E /* Minibus.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29DC74826D2A4B4001E766E /* Minibus.swift */; };
 		B2AD935226D08BE9002ABD68 /* ActivityIndicatorView in Frameworks */ = {isa = PBXBuildFile; productRef = B2AD935126D08BE9002ABD68 /* ActivityIndicatorView */; };
 		B2AD935426D08F04002ABD68 /* Help_siriShortcut.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AD935326D08F04002ABD68 /* Help_siriShortcut.swift */; };
 		B2AD935726D09876002ABD68 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = B2AD935626D09876002ABD68 /* Alamofire */; };
@@ -45,6 +46,9 @@
 		B2DACA6C26D17A47004732AD /* MTR_AirportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DACA6B26D17A47004732AD /* MTR_AirportView.swift */; };
 		B2DACA6E26D17A5F004732AD /* MTR_TuenMaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DACA6D26D17A5F004732AD /* MTR_TuenMaView.swift */; };
 		B2DACA7026D17A73004732AD /* MTR_TKOView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DACA6F26D17A73004732AD /* MTR_TKOView.swift */; };
+		B2DFFD8726D24956009B3141 /* Minibus_NTView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DFFD8626D24956009B3141 /* Minibus_NTView.swift */; };
+		B2DFFD8926D2496B009B3141 /* Minibus_KLNView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DFFD8826D2496B009B3141 /* Minibus_KLNView.swift */; };
+		B2DFFD8B26D24978009B3141 /* Minibus_HKIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DFFD8A26D24978009B3141 /* Minibus_HKIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +105,7 @@
 		B29B81FC26CEC32A008FE020 /* IntentHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
 		B29B81FE26CEC32A008FE020 /* ETAIntentHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ETAIntentHandler.swift; sourceTree = "<group>"; };
 		B29B81FF26CEC32A008FE020 /* Intents.intentdefinition */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
+		B29DC74826D2A4B4001E766E /* Minibus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Minibus.swift; sourceTree = "<group>"; };
 		B2AD935326D08F04002ABD68 /* Help_siriShortcut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Help_siriShortcut.swift; sourceTree = "<group>"; };
 		B2C8C11A26D00C79008DBCDB /* Add.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Add.swift; sourceTree = "<group>"; };
 		B2DACA6626D13250004732AD /* MTR_TungChungView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTR_TungChungView.swift; sourceTree = "<group>"; };
@@ -108,6 +113,9 @@
 		B2DACA6B26D17A47004732AD /* MTR_AirportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTR_AirportView.swift; sourceTree = "<group>"; };
 		B2DACA6D26D17A5F004732AD /* MTR_TuenMaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTR_TuenMaView.swift; sourceTree = "<group>"; };
 		B2DACA6F26D17A73004732AD /* MTR_TKOView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTR_TKOView.swift; sourceTree = "<group>"; };
+		B2DFFD8626D24956009B3141 /* Minibus_NTView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Minibus_NTView.swift; sourceTree = "<group>"; };
+		B2DFFD8826D2496B009B3141 /* Minibus_KLNView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Minibus_KLNView.swift; sourceTree = "<group>"; };
+		B2DFFD8A26D24978009B3141 /* Minibus_HKIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Minibus_HKIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +146,7 @@
 		B282A63426CF3B08004870D0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B29DC74726D2A424001E766E /* Minibus */,
 				B2DACA6826D13C27004732AD /* MTR */,
 				B2DACA6426D13005004732AD /* Bus */,
 				B24B06CE26CF829E00379F2C /* FavouriteRoutes.swift */,
@@ -241,6 +250,14 @@
 			path = demoIntent;
 			sourceTree = "<group>";
 		};
+		B29DC74726D2A424001E766E /* Minibus */ = {
+			isa = PBXGroup;
+			children = (
+				B29DC74826D2A4B4001E766E /* Minibus.swift */,
+			);
+			path = Minibus;
+			sourceTree = "<group>";
+		};
 		B2C8C11826D00C16008DBCDB /* CommonView */ = {
 			isa = PBXGroup;
 			children = (
@@ -256,6 +273,7 @@
 			isa = PBXGroup;
 			children = (
 				B2C8C11A26D00C79008DBCDB /* Add.swift */,
+				B2DFFD8326D24835009B3141 /* Minibus */,
 				B2DACA6526D130D5004732AD /* MTR */,
 				B282A63E26CF4715004870D0 /* Bus */,
 			);
@@ -287,6 +305,16 @@
 				B2DACA6926D13C39004732AD /* MTR.swift */,
 			);
 			path = MTR;
+			sourceTree = "<group>";
+		};
+		B2DFFD8326D24835009B3141 /* Minibus */ = {
+			isa = PBXGroup;
+			children = (
+				B2DFFD8626D24956009B3141 /* Minibus_NTView.swift */,
+				B2DFFD8826D2496B009B3141 /* Minibus_KLNView.swift */,
+				B2DFFD8A26D24978009B3141 /* Minibus_HKIView.swift */,
+			);
+			path = Minibus;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -415,6 +443,7 @@
 				B24B06D726CFA27600379F2C /* RoutesHandler.swift in Sources */,
 				B2DACA7026D17A73004732AD /* MTR_TKOView.swift in Sources */,
 				B2DACA6C26D17A47004732AD /* MTR_AirportView.swift in Sources */,
+				B2DFFD8B26D24978009B3141 /* Minibus_HKIView.swift in Sources */,
 				B282A65926CF6851004870D0 /* SheetPreventDismiss.swift in Sources */,
 				B282A65B26CF6851004870D0 /* StringFunctions.swift in Sources */,
 				B282A63926CF3B3E004870D0 /* Bus_KMB.swift in Sources */,
@@ -423,6 +452,8 @@
 				B2AD935426D08F04002ABD68 /* Help_siriShortcut.swift in Sources */,
 				B282A65526CF6845004870D0 /* ButtonStyles.swift in Sources */,
 				B282A65326CF6828004870D0 /* keyboardFunctions.swift in Sources */,
+				B2DFFD8726D24956009B3141 /* Minibus_NTView.swift in Sources */,
+				B2DFFD8926D2496B009B3141 /* Minibus_KLNView.swift in Sources */,
 				B29B817826CE7FC5008FE020 /* Home.swift in Sources */,
 				B282A65A26CF6851004870D0 /* SharedOptions.swift in Sources */,
 				B29B817626CE7FC5008FE020 /* TransportGraspApp.swift in Sources */,
@@ -430,6 +461,7 @@
 				B24B06E026CFCCE100379F2C /* PopupAlertView.swift in Sources */,
 				B24B06CF26CF829E00379F2C /* FavouriteRoutes.swift in Sources */,
 				B2DACA6726D13250004732AD /* MTR_TungChungView.swift in Sources */,
+				B29DC74926D2A4B4001E766E /* Minibus.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -579,7 +611,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = TransportGrasp/TransportGrasp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"TransportGrasp/Preview Content\"";
 				DEVELOPMENT_TEAM = 4T6W96A423;
 				ENABLE_PREVIEWS = YES;
@@ -614,7 +646,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = TransportGrasp/TransportGrasp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"TransportGrasp/Preview Content\"";
 				DEVELOPMENT_TEAM = 4T6W96A423;
 				ENABLE_PREVIEWS = YES;

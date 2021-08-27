@@ -119,13 +119,13 @@ class FavouriteRoutes:ObservableObject,Identifiable{
                         tempETA.append("班次有延誤")
                     }
                     
-                    print("data \(json)")
+//                    print("data \(json)")
                     json["data"]["\(lineCode)-\(stationCode)"][dir].arrayValue.map{
                         print("value: \($0)")
                         var tempResultString = ""
                         let time = $0["time"].stringValue
                         var etaMins = ""
-                        
+                        print("MTR: \(time)")
                         let dateFormatter = DateFormatter()
                         dateFormatter.timeZone = TimeZone(identifier: TimeZone.current.identifier)
                         dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
@@ -138,7 +138,7 @@ class FavouriteRoutes:ObservableObject,Identifiable{
                             tempResultString += "\(etaMins)"
                             tempETA.append(tempResultString)
                     }
-                    print("final ETA \(tempETA)")
+//                    print("final ETA \(tempETA)")
                     self.favouriteArray[index].eta = tempETA
                 default:
                     break;
