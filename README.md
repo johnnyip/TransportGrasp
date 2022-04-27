@@ -17,3 +17,4 @@ Whenever the user reaches a certain location, a notification with the next train
 
 Screenshots: https://johnnyip.com/transportgrasp/
 
+Testflight: https://testflight.apple.com/join/UY7OWgVG
